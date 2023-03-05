@@ -1,38 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
 .App {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  background-color: #192841;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/*NavBar Stuff*/
+/*#region*/
+.Navbar
+{
   color: white;
+  height: 4rem;
+  width: 100%;
 }
+.Header 
+{
+  position: flex;
+  padding:0.25%;
+  float: left;
+  text-align: left;
+  border: black;
+  border-style: solid;
+  border-radius: 5px;
+}
+.Header_Container 
+{
+  height: 3rem;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: end;
+}
+.List 
+{
+  display: flex;
+  flex-basis: 200px;
+  font-size: x-large;
+  text-align: center;
+  height: 100%;
+}
+.List:hover{
+  background-color: gray;
+}
+/*#endregion*/
 
-.App-link {
-  color: #61dafb;
+/*Intro Stuff*/
+/*#region*/
+.Intro{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  height: 20rem;
+  left: 15%;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: blue;
+  padding: 5px;
+  color: #afd0f9;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Intro_Words{
+  background-color: green;
+  align-self: flex-start;
+  float: left;
+  width: 50%;
+  height: 100%;
+  text-align: left;
 }
+.Intro_Words p{
+  font-size: 20px;
+}
+.profilePic{
+  align-self: flex-end;
+  height: 100%;
+}
+/*#endregion*/
